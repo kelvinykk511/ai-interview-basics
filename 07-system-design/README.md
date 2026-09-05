@@ -1,3 +1,5 @@
-# system design
+# system design / AI 應用設計
 
-新手內容會逐步補上。先打好 `01-ml-basics`。
+後端視角的 AI 系統設計與評估。
+
+- [LLM / RAG 評估（Evals）](./llm-evals.md)
