@@ -4,3 +4,4 @@
 
 - [LLM Serving：延遲、吞吐與 KV Cache](./llm-serving-basics.md)
 - [Prompt Caching 與推理成本](./prompt-caching-cost.md)
+- [Embedding 換模與 Reindex 運維](./embedding-reindex-ops.md)
