@@ -4,3 +4,4 @@
 
 - [LLM / RAG 評估（Evals）](./llm-evals.md)
 - [Agent Tool-Calling 可靠性](./agent-tool-calling.md)
+- [Prompt Injection 與 Guardrails](./prompt-injection-guardrails.md)
