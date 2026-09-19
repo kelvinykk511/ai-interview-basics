@@ -6,3 +6,4 @@
 - [Retrieval Eval 深挖](./retrieval-eval-deep-dive.md)
 - [Agent Tool-Calling 可靠性](./agent-tool-calling.md)
 - [Prompt Injection 與 Guardrails](./prompt-injection-guardrails.md)
+- [Structured Output／JSON Mode](./structured-output-json.md)

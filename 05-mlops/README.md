@@ -3,5 +3,6 @@
 工程向筆記（部署、監控、serving、成本）。
 
 - [LLM Serving：延遲、吞吐與 KV Cache](./llm-serving-basics.md)
+- [LLM Streaming（SSE）：首字體感、取消與背壓](./streaming-sse.md)
 - [Prompt Caching 與推理成本](./prompt-caching-cost.md)
 - [Embedding 換模與 Reindex 運維](./embedding-reindex-ops.md)
