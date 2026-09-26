@@ -8,3 +8,5 @@
 - [Embedding 換模與 Reindex 運維](./embedding-reindex-ops.md)
 - [LLM Gateway：限流、熔斷與冪等重試](./llm-gateway-resilience.md)
 - [Speculative Decoding：草稿模型加速推理](./speculative-decoding.md)
+- [LoRA／多 Adapter Serving：一底多租戶](./lora-multi-adapter-serving.md)
+- [PagedAttention 與 Prefix KV Caching（推理引擎）](./paged-attention-prefix-kv.md)
