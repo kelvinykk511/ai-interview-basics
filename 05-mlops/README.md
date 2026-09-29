@@ -10,3 +10,5 @@
 - [Speculative Decoding：草稿模型加速推理](./speculative-decoding.md)
 - [LoRA／多 Adapter Serving：一底多租戶](./lora-multi-adapter-serving.md)
 - [PagedAttention 與 Prefix KV Caching（推理引擎）](./paged-attention-prefix-kv.md)
+- [Continuous Batching 深挖（調度、迭代與尾延遲）](./continuous-batching.md)
+- [量化 Serving：GPTQ／AWQ／FP8（上線視角）](./quantization-serving.md)
