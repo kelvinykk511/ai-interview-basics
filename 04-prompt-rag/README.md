@@ -8,3 +8,4 @@
 - [幻覺、Grounding 與 Citations](./grounding-citations.md)
 - [Multi-tenant RAG 隔離](./multi-tenant-rag.md)
 - [Hybrid Search + Rerank](./hybrid-search-rerank.md)
+- [RAG 新鮮度與 Index Lag](./rag-freshness-index-lag.md)
