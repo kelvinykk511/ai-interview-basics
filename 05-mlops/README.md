@@ -12,3 +12,5 @@
 - [PagedAttention 與 Prefix KV Caching（推理引擎）](./paged-attention-prefix-kv.md)
 - [Continuous Batching 深挖（調度、迭代與尾延遲）](./continuous-batching.md)
 - [量化 Serving：GPTQ／AWQ／FP8（上線視角）](./quantization-serving.md)
+- [KV Cache 量化深挖（容量、品質與 Continuous Batching）](./kv-cache-quantization.md)
+- [Multi-LoRA × Continuous Batching：容量規劃](./multi-lora-capacity-planning.md)
