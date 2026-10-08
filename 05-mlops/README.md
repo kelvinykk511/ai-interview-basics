@@ -16,3 +16,4 @@
 - [Multi-LoRA × Continuous Batching：容量規劃](./multi-lora-capacity-planning.md)
 - [Speculative Decoding × Continuous Batching：高負載時加速為何消失](./speculative-x-continuous-batching.md)
 - [Prefill／Decode 分離（P/D Disaggregation）](./prefill-decode-disaggregation.md)
+- [Semantic Cache：LLM 回應快取（命中、誤命中與失效）](./semantic-cache.md)
