@@ -9,3 +9,4 @@
 - [Multi-tenant RAG 隔離](./multi-tenant-rag.md)
 - [Hybrid Search + Rerank](./hybrid-search-rerank.md)
 - [RAG 新鮮度與 Index Lag](./rag-freshness-index-lag.md)
+- [向量索引取捨：HNSW vs IVF-PQ、量化、過濾檢索](./vector-index-tradeoffs.md)
