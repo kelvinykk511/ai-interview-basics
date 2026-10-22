@@ -13,3 +13,4 @@
 - [線上 LLM 評估：Shadow、Canary 與護欄指標](./online-llm-eval-canary.md)
 - [RAG 改動上線：replay → shadow → canary](./rag-shadow-eval.md)
 - [長對話上下文管理：截斷、摘要與記憶](./conversation-context-management.md)
+- [LLM 應用 PII 脫敏與數據外洩防護](./pii-redaction-llm-gateway.md)

@@ -10,3 +10,4 @@
 - [Hybrid Search + Rerank](./hybrid-search-rerank.md)
 - [RAG 新鮮度與 Index Lag](./rag-freshness-index-lag.md)
 - [向量索引取捨：HNSW vs IVF-PQ、量化、過濾檢索](./vector-index-tradeoffs.md)
+- [Embedding 模型選型](./embedding-model-selection.md)
