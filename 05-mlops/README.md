@@ -19,3 +19,4 @@
 - [Semantic Cache：LLM 回應快取（命中、誤命中與失效）](./semantic-cache.md)
 - [LLM 成本路由／模型級聯](./llm-cost-routing-cascade.md)
 - [Token 限流與多租戶配額（TPM / RPM / 預扣再結算）](./token-rate-limit-quota.md)
+- [離線批量推理（Batch API、冪等 custom_id、部分失敗）](./batch-inference-offline-jobs.md)
