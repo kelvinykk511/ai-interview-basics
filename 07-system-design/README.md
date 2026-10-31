@@ -16,3 +16,4 @@
 - [LLM 應用 PII 脫敏與數據外洩防護](./pii-redaction-llm-gateway.md)
 - [Prompt 與模型版本管理（Registry、Pin snapshot、下架遷移）](./prompt-model-versioning.md)
 - [Agent 工具權限（Least Privilege、Confused Deputy、確認卡）](./agent-tool-authorization.md)
+- [Agent 長期記憶（寫路徑 upsert、讀取打分、刪除、Memory Poisoning）](./agent-long-term-memory.md)
