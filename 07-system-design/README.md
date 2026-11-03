@@ -17,3 +17,5 @@
 - [Prompt 與模型版本管理（Registry、Pin snapshot、下架遷移）](./prompt-model-versioning.md)
 - [Agent 工具權限（Least Privilege、Confused Deputy、確認卡）](./agent-tool-authorization.md)
 - [Agent 長期記憶（寫路徑 upsert、讀取打分、刪除、Memory Poisoning）](./agent-long-term-memory.md)
+- [Text-to-SQL：安全、業務口徑與評估](./text-to-sql-safety.md)
+- [MCP Server 設計（工具設計、OAuth、Tool Poisoning、運維）](./mcp-server-design.md)
