@@ -13,3 +13,4 @@
 - [向量索引取捨：HNSW vs IVF-PQ、量化、過濾檢索](./vector-index-tradeoffs.md)
 - [Embedding 模型選型](./embedding-model-selection.md)
 - [文檔解析 Ingestion：PDF、表格、OCR](./document-ingestion-parsing.md)
+- [Long Context vs RAG（成本、延遲、lost in the middle、混合模式）](./long-context-vs-rag.md)
