@@ -20,3 +20,5 @@
 - [Text-to-SQL：安全、業務口徑與評估](./text-to-sql-safety.md)
 - [MCP Server 設計（工具設計、OAuth、Tool Poisoning、運維）](./mcp-server-design.md)
 - [Multi-Agent 編排（Supervisor、Handoff、失敗模式、預算）](./multi-agent-orchestration.md)
+- [Guardrail／Moderation 延遲預算（Cascade、Speculative、分 tier fail）](./guardrail-moderation-latency.md)
+- [AI 網關多模型 Fallback 語義一致性（Capability Matrix、拒答漂移）](./llm-gateway-fallback-semantics.md)
