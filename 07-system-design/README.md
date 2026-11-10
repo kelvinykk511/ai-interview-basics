@@ -22,3 +22,4 @@
 - [Multi-Agent 編排（Supervisor、Handoff、失敗模式、預算）](./multi-agent-orchestration.md)
 - [Guardrail／Moderation 延遲預算（Cascade、Speculative、分 tier fail）](./guardrail-moderation-latency.md)
 - [AI 網關多模型 Fallback 語義一致性（Capability Matrix、拒答漂移）](./llm-gateway-fallback-semantics.md)
+- [LLM A/B 實驗統計（單位、功效、Peeking、護欄）](./llm-ab-experiment-stats.md)

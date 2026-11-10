@@ -20,3 +20,5 @@
 - [LLM 成本路由／模型級聯](./llm-cost-routing-cascade.md)
 - [Token 限流與多租戶配額（TPM / RPM / 預扣再結算）](./token-rate-limit-quota.md)
 - [離線批量推理（Batch API、冪等 custom_id、部分失敗）](./batch-inference-offline-jobs.md)
+- [Fine-tune vs RAG 取捨](./finetune-vs-rag.md)
+- [Fine-tune 數據管線（來源、洩漏、產明日誌同版本）](./finetune-data-pipeline.md)
