@@ -6,6 +6,7 @@
 - [LLM Streaming（SSE）：首字體感、取消與背壓](./streaming-sse.md)
 - [Prompt Caching 與推理成本](./prompt-caching-cost.md)
 - [Embedding 換模與 Reindex 運維](./embedding-reindex-ops.md)
+- [Embedding 刷新與漂移（增量重嵌、版本釘選、語料／查詢漂移）](./embedding-refresh-drift.md)
 - [LLM Gateway：限流、熔斷與冪等重試](./llm-gateway-resilience.md)
 - [Speculative Decoding：草稿模型加速推理](./speculative-decoding.md)
 - [LoRA／多 Adapter Serving：一底多租戶](./lora-multi-adapter-serving.md)

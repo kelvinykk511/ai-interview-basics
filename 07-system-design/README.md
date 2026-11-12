@@ -4,6 +4,7 @@
 
 - [LLM / RAG 評估（Evals）](./llm-evals.md)
 - [Retrieval Eval 深挖](./retrieval-eval-deep-dive.md)
+- [線上檢索評估（無金標時點監察檢索品質）](./online-retrieval-eval.md)
 - [Agent Tool-Calling 可靠性](./agent-tool-calling.md)
 - [Agent 軌跡評估](./agent-trajectory-eval.md)
 - [Tool-use 延遲與並行工具](./tool-use-latency-parallel.md)
