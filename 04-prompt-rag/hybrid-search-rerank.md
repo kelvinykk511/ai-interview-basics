@@ -6,7 +6,7 @@
 
 ## 面試短答
 
-- **為什麼 hybrid**：Dense（embedding）抓語義／同義改寫；Sparse（BM25／SPL ADE 等）抓 exact token。RAG 裡兩者互補，尤其是 CEX 後端文件：產品代號、錯誤碼、API path 要 exact。
+- **為什麼 hybrid**：Dense（embedding）抓語義／同義改寫；Sparse（BM25／[SPLADE](./splade-learned-sparse.md) 等）抓 exact token／學到嘅擴展詞。RAG 裡兩者互補，尤其是 CEX 後端文件：產品代號、錯誤碼、API path 要 exact。
 - **融合（fusion）**：常見 *RRF（Reciprocal Rank Fusion）*：不依賴兩邊分數可比，用名次 `1/(k+rank)` 加總再排序。也可加權分數，但要校準量綱。面試先講 RRF，再說「可加權／可學習 fusion」。
 - **Rerank**：檢索先取較大候選（例如 50–100），用 cross-encoder／專用 rerank API 對 `(query, doc)` 打分，只留 5–10 進 context。延遲與成本換召回與精準。
 - **Pipeline**：query 改寫／多 query → hybrid 召回 →（可選）metadata filter → rerank → 截斷進 prompt。Filter 仍要後端強制（見 multi-tenant）。

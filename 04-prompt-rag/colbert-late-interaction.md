@@ -1,7 +1,7 @@
 # ColBERT／Late Interaction：token 級 MaxSim，同 late chunking 唔係同一樣嘢
 
 > 2026-11-19 · AI warm-up · 工程面試向  
-> Late chunking 見 [late-chunking.md](./late-chunking.md)；單向量 ANN 見 [vector-index-tradeoffs.md](./vector-index-tradeoffs.md)；hybrid + rerank 見 [hybrid-search-rerank.md](./hybrid-search-rerank.md)；生產 reranker 見 [reranker-production.md](./reranker-production.md)；embedding 選型見 [embedding-model-selection.md](./embedding-model-selection.md)。**本篇講：點解要保留 query／document 嘅 token 向量、MaxSim 點計、同「一個 chunk 一條向量」同 cross-encoder 點取捨，以及同 late chunking 呢個同樣有 late 字嘅方法有何分別。**
+> Late chunking 見 [late-chunking.md](./late-chunking.md)；單向量 ANN 見 [vector-index-tradeoffs.md](./vector-index-tradeoffs.md)；hybrid + rerank 見 [hybrid-search-rerank.md](./hybrid-search-rerank.md)；learned sparse 見 [splade-learned-sparse.md](./splade-learned-sparse.md)；生產 reranker 見 [reranker-production.md](./reranker-production.md)；embedding 選型見 [embedding-model-selection.md](./embedding-model-selection.md)。**本篇講：點解要保留 query／document 嘅 token 向量、MaxSim 點計、同「一個 chunk 一條向量」同 cross-encoder 點取捨，以及同 late chunking 呢個同樣有 late 字嘅方法有何分別。**
 
 ## 人話
 

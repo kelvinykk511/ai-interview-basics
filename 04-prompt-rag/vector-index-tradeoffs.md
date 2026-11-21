@@ -9,7 +9,7 @@
 - **IVF**：k-means 分 `nlist` 個桶（倒排），查詢只掃最近 `nprobe` 個桶。類比 DB 分區裁剪。省內存、build 快；`nprobe` 太細會漏召回；數據漂移後 centroid 過時要 retrain。
 - **PQ（product quantization）**：768 維切 m 段，每段用 256 個碼字 → 每段 1 byte。768×4B=3072B → m=96 得 96B，壓 32 倍。距離有誤差 → 先粗排，再用原向量 rerank（refine）top-N。
 - **SQ int8**：壓 4 倍，誤差細；**binary**：壓 32 倍，一定要配 rerank。
-- **維度**：Matryoshka 類 embedding 可截短（如 3072→1024），用少少質量換一半以上內存。
+- **維度**：Matryoshka 類 embedding 可截短（如 3072→1024），用少少質量換一半以上內存。詳見 [matryoshka-variable-dimensions.md](./matryoshka-variable-dimensions.md)。
 - **內存估算**：1 億 × 768 × 4B ≈ 307GB float32，單機放唔落 → 要 PQ / 分片 / DiskANN 類磁碟索引。
 
 ### 過濾檢索（多租戶、權限）
