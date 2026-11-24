@@ -8,7 +8,7 @@
 - **HNSW**：多層圖，好似 skip list + 鄰居網絡；頂層粗跳、落層精搜。參數 `M`（每點鄰居數）、`efConstruction`（建圖質量）、`efSearch`（查詢候選隊列，越大越準越慢）。優點：recall 高、延遲低、可增量插入。缺點：食內存（原向量 + 圖邊，layer0 每點約 2M 個 4-byte id，M=16 ≈ 128B）、刪除靠 tombstone、build 慢。
 - **IVF**：k-means 分 `nlist` 個桶（倒排），查詢只掃最近 `nprobe` 個桶。類比 DB 分區裁剪。省內存、build 快；`nprobe` 太細會漏召回；數據漂移後 centroid 過時要 retrain。
 - **PQ（product quantization）**：768 維切 m 段，每段用 256 個碼字 → 每段 1 byte。768×4B=3072B → m=96 得 96B，壓 32 倍。距離有誤差 → 先粗排，再用原向量 rerank（refine）top-N。
-- **SQ int8**：壓 4 倍，誤差細；**binary**：壓 32 倍，一定要配 rerank。
+- **SQ int8**：壓 4 倍，誤差細；**binary／RaBitQ**：壓約 32 倍，一定要配 over-fetch + 精排。詳見 [binary-quantization-rabitq.md](./binary-quantization-rabitq.md)。
 - **維度**：Matryoshka 類 embedding 可截短（如 3072→1024），用少少質量換一半以上內存。詳見 [matryoshka-variable-dimensions.md](./matryoshka-variable-dimensions.md)。
 - **內存估算**：1 億 × 768 × 4B ≈ 307GB float32，單機放唔落 → 要 PQ / 分片 / DiskANN 類磁碟索引。
 

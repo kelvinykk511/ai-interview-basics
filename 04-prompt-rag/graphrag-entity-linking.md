@@ -1,7 +1,7 @@
 # GraphRAG／實體鏈接：community vs local、圖譜唔係唯一真源
 
 > 2026-11-19 · AI warm-up · 工程面試向  
-> 迭代檢索見 [agentic-iterative-retrieval.md](./agentic-iterative-retrieval.md)；去邊個庫見 [query-corpus-routing.md](./query-corpus-routing.md)；grounding 見 [grounding-citations.md](./grounding-citations.md)；多租戶 ACL 見 [multi-tenant-rag.md](./multi-tenant-rag.md)。**本篇講：幾時先值得建知識圖譜、實體點對到規範 ID、local／community（global）查詢點分工，以及摘要圖唔可以取代受控事實表。**
+> 迭代檢索見 [agentic-iterative-retrieval.md](./agentic-iterative-retrieval.md)；去邊個庫見 [query-corpus-routing.md](./query-corpus-routing.md)；grounding 見 [grounding-citations.md](./grounding-citations.md)；多租戶 ACL 見 [multi-tenant-rag.md](./multi-tenant-rag.md)；層次摘要對照見 [raptor-hierarchical-summaries.md](./raptor-hierarchical-summaries.md)。**本篇講：幾時先值得建知識圖譜、實體點對到規範 ID、local／community（global）查詢點分工，以及摘要圖唔可以取代受控事實表。**
 
 ## 人話
 
