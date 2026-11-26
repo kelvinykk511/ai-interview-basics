@@ -22,7 +22,7 @@ A：當 MVP 可以，面試要補「依文件類型調」。FAQ／API error code
 A：答案跨很多段、或關鍵詞在標題／表頭而正文在另一塊；或切在列表中間導致指代不清（「上述三項」）。解法：把標題路徑 prepend 進每個 chunk、表格整列保留、必要時 parent-child（小塊檢索、大塊送進 LLM）。
 
 **Q：Parent-child / small-to-big 是什麼？**  
-A：索引用小 chunk（檢索準），命中後把父段落／整節送進生成 context（上下文夠）。代價：實作複雜、要維護父子 id 映射。
+A：索引用小 chunk（檢索準），命中後把父段落／整節送進生成 context（上下文夠）。代價：實作複雜、要維護父子 id 映射。專篇見 [parent-child-small-to-big.md](./parent-child-small-to-big.md)。
 
 **Q：多語言／程式碼怎麼切？**  
 A：程式碼按函數／類別／符號邊界切，並保留檔名＋符號名在 metadata；中英混排避免在詞中間硬切（用 tokenizer 對齊模型）。法律／合規文件優先保留條款編號完整。

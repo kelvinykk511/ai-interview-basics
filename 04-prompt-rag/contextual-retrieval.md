@@ -21,7 +21,7 @@
 - **版本要釘死，當編碼參數。** 寫入 `contextualizer_model_id` + `context_prompt_version` + 源 `content_hash` + `embed_version`。正文變 → 只重做受影響文件；prompt／contextualizer 模型變 → 視作新編碼參數，走新 collection／藍綠（見 embedding-refresh），禁止同一 index 混「有語境／無語境」或兩個 prompt 版本。
 - **語境可以寫錯，要抽檢。** 模型把 ETH 費率塊標成 BTC、把已廢規則寫成仍生效，等於向索引注入錯誤關鍵詞，召回會「更自信地錯」。抽樣人工或規則校驗（產品名、日期、條款號必須能喺源文對上）；唔好把跨租戶、PII、其他文件嘅術語表偷偷塞進語境。
 - **長文唔能盲傳「整本」。** Contextualizer 本身有 context 上限。80 頁 SOP 應以章／節做窗口（parent section + 標題路徑），而唔係每次塞全文。呢個窗口版本都要入 `chunk_strategy_version`。
-- **同 rerank、parent-child 唔互斥。** CR 係 ingest 時改索引文字；rerank 係 query 時精排（Anthropic 喺自己嘅評測上：contextual embedding+BM25 把 top-20 檢索失敗率由 5.7% 降到 2.9%，約 49%；再加 rerank 到 1.9%，約 67%——**係佢哋語料同 1−Recall@20，唔係你嘅保證**，要用自己嘅 golden／shadow）。Parent-child／small-to-big 改善嘅係「命中之後生成睇幾多」，唔代替「先搵對塊」。
+- **同 rerank、parent-child 唔互斥。** CR 係 ingest 時改索引文字；rerank 係 query 時精排（Anthropic 喺自己嘅評測上：contextual embedding+BM25 把 top-20 檢索失敗率由 5.7% 降到 2.9%，約 49%；再加 rerank 到 1.9%，約 67%——**係佢哋語料同 1−Recall@20，唔係你嘅保證**，要用自己嘅 golden／shadow）。Parent-child／small-to-big 改善嘅係「命中之後生成睇幾多」，唔代替「先搵對塊」（專篇見 [parent-child-small-to-big.md](./parent-child-small-to-big.md)）。
 - **CEX 直覺。** 費率、限制、狀態機呢類塊經常係短句＋指代。上幣／改名之後，語境裡嘅產品別名要跟文件走；語境寫錯幣種係資金答錯級事故，要比「少召回一點」更嚴。
 
 ## 常見追問（連答案）

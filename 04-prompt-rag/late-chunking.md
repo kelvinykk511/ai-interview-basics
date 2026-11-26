@@ -1,7 +1,7 @@
 # Late Chunking（先整篇編碼再切向量）
 
 > 2026-11-14 · AI warm-up · 工程面試向  
-> 切塊同 parent-child 見 [`chunking-strategies.md`](./chunking-strategies.md)；Contextual Retrieval 見 [`contextual-retrieval.md`](./contextual-retrieval.md)；embedding 模型選型見 [`embedding-model-selection.md`](./embedding-model-selection.md)；同 token 級 late interaction 嘅分別見 [colbert-late-interaction.md](./colbert-late-interaction.md)。**本篇講：另一種補「孤立 chunk 丟失語境」嘅方法——用長上下文 embedding 模型先對全文做 token 編碼，再按 chunk 邊界做 pooling。**
+> 切塊見 [`chunking-strategies.md`](./chunking-strategies.md)；parent-child 見 [parent-child-small-to-big.md](./parent-child-small-to-big.md)；Contextual Retrieval 見 [`contextual-retrieval.md`](./contextual-retrieval.md)；embedding 模型選型見 [`embedding-model-selection.md`](./embedding-model-selection.md)；同 token 級 late interaction 嘅分別見 [colbert-late-interaction.md](./colbert-late-interaction.md)。**本篇講：另一種補「孤立 chunk 丟失語境」嘅方法——用長上下文 embedding 模型先對全文做 token 編碼，再按 chunk 邊界做 pooling。**
 
 ## 人話
 

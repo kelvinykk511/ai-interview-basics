@@ -1,7 +1,7 @@
 # 二元量化／RaBitQ：1-bit 碼要有估距，唔係對每維取 sign 就完
 
 > 2026-11-24 · AI warm-up · 工程面試向  
-> 索引結構見 [vector-index-tradeoffs.md](./vector-index-tradeoffs.md)；MRL／截維見 [matryoshka-variable-dimensions.md](./matryoshka-variable-dimensions.md)；換模／版本見 [embedding-refresh-drift.md](../05-mlops/embedding-refresh-drift.md)。LLM 權重同 KV 量化係另一回事，見 [quantization-serving.md](../05-mlops/quantization-serving.md)、[kv-cache-quantization.md](../05-mlops/kv-cache-quantization.md)。**本篇講：embedding 二元量化同 PQ／int8／MRL 有何分別、RaBitQ 點解唔係天真 Hamming、點樣 over-fetch＋精排，以及版本同切片評估。**
+> 索引結構見 [vector-index-tradeoffs.md](./vector-index-tradeoffs.md)；PQ／int8 見 [product-quantization-ivf-pq.md](./product-quantization-ivf-pq.md)；MRL／截維見 [matryoshka-variable-dimensions.md](./matryoshka-variable-dimensions.md)；換模／版本見 [embedding-refresh-drift.md](../05-mlops/embedding-refresh-drift.md)。LLM 權重同 KV 量化係另一回事，見 [quantization-serving.md](../05-mlops/quantization-serving.md)、[kv-cache-quantization.md](../05-mlops/kv-cache-quantization.md)。**本篇講：embedding 二元量化同 PQ／int8／MRL 有何分別、RaBitQ 點解唔係天真 Hamming、點樣 over-fetch＋精排，以及版本同切片評估。**
 
 ## 人話
 

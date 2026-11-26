@@ -1,7 +1,7 @@
 # RAPTOR／層次摘要：按相似度砌樹，唔係 GraphRAG 換皮
 
 > 2026-11-24 · AI warm-up · 工程面試向  
-> GraphRAG 見 [graphrag-entity-linking.md](./graphrag-entity-linking.md)；parent-child 見 [chunking-strategies.md](./chunking-strategies.md)；迭代檢索見 [agentic-iterative-retrieval.md](./agentic-iterative-retrieval.md)；路由見 [query-corpus-routing.md](./query-corpus-routing.md)。**本篇講：RAPTOR 點樣用遞迴聚類＋摘要做層次檢索、collapsed tree 同 traversal 點揀、同 GraphRAG／parent-child 有何分別，以及摘要節點點解唔可以當受控事實。**
+> GraphRAG 見 [graphrag-entity-linking.md](./graphrag-entity-linking.md)；parent-child 見 [parent-child-small-to-big.md](./parent-child-small-to-big.md)；迭代檢索見 [agentic-iterative-retrieval.md](./agentic-iterative-retrieval.md)；路由見 [query-corpus-routing.md](./query-corpus-routing.md)。**本篇講：RAPTOR 點樣用遞迴聚類＋摘要做層次檢索、collapsed tree 同 traversal 點揀、同 GraphRAG／parent-child 有何分別，以及摘要節點點解唔可以當受控事實。**
 
 ## 人話
 
