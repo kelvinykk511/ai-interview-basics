@@ -1,5 +1,7 @@
 # Query 改寫：多輪指代、Multi-query、HyDE、Multi-hop
 
+> 2026-11-28 起 HyDE 同生產改寫深挖見 [hyde-query-rewriting.md](./hyde-query-rewriting.md)。本篇保留 condense／multi-query／HyDE／multi-hop 總覽。
+
 ## 人話
 用戶問嘅句子通常唔適合直接拎去搜：「咁佢嘅手續費呢？」冇主語；「VIP 同普通有咩分別」其實要搜兩樣嘢。Query 改寫就係喺檢索前，先將問題變成「好搜」嘅一句或幾句。
 

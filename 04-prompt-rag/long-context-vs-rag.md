@@ -1,6 +1,7 @@
 # Long Context vs RAG：成份文件塞入去，定係先檢索？
 
-> 2026-11-05 · AI warm-up · 工程面試向
+> 2026-11-05 · AI warm-up · 工程面試向  
+> 檢索之後點組裝、lost in the middle 同 prompt cache 嘅取捨，見 [context-packing-lost-in-the-middle.md](./context-packing-lost-in-the-middle.md)。
 
 ## 人話
 

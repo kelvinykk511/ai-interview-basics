@@ -11,6 +11,7 @@
 - [ColBERT／Late Interaction（token MaxSim，對照 late chunking）](./colbert-late-interaction.md)
 - [SPLADE／Learned Sparse（詞表稀疏＋擴展，對照 BM25／ColBERT）](./splade-learned-sparse.md)
 - [Query 改寫（多輪指代、Multi-query、HyDE）](./query-rewriting.md)
+- [HyDE／Query 改寫深挖（假答案只係檢索鉤，同原句／BM25 並行）](./hyde-query-rewriting.md)
 - [Agentic／迭代檢索（打分、有預算再跳、停止條件）](./agentic-iterative-retrieval.md)
 - [Query／Corpus 路由（分層路由、多標籤、誤路由代價）](./query-corpus-routing.md)
 - [GraphRAG／實體鏈接（community vs local、圖譜唔係唯一真源）](./graphrag-entity-linking.md)
@@ -27,3 +28,4 @@
 - [PQ／IVF-PQ 與 int8（分段碼本壓縮，對照 RaBitQ／MRL）](./product-quantization-ivf-pq.md)
 - [文檔解析 Ingestion：PDF、表格、OCR](./document-ingestion-parsing.md)
 - [Long Context vs RAG（成本、延遲、lost in the middle、混合模式）](./long-context-vs-rag.md)
+- [Context packing／Lost-in-the-middle（組裝順序、預算、U 形 vs prompt cache）](./context-packing-lost-in-the-middle.md)
